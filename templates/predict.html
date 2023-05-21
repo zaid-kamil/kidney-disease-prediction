@@ -1,20 +1,47 @@
-{% extends 'base.html' %}
-
+{% extends 'base.html' %} 
 {% block css %}
-<style>
-    
-</style>
-{% endblock css %}
+{% endblock css %} 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 mx-auto"></div>
-    </div>
-</div>
-{% endblock %}
+<section class="contact" id="contact">
 
-{% block js %}
+    <h1 class="heading"> <span>Fill patient details</span> us </h1>
+
+    <form action="/predict" method="post">
+        <div class="inputBox">
+            <input type="text" placeholder="name"  name="name">
+            <input type="number" placeholder="age" name="age">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="bp" name="bp">
+            <input type="number" placeholder="sg" name="sg" step=".1">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="rbc" name="rbc">
+            <input type="text" placeholder="pcc" name="pcc">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="ba" name="ba">
+            <input type="number" placeholder="bu" name="bu" step=".1">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="sc" name="sc" step=".1">
+            <input type="number" placeholder="pot" name="pot" step=".1">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="htn" name="htn">
+            <input type="text" placeholder="dm" name="dm">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="cad" name="cad">
+            <input type="text" placeholder="pe" name="pe">
+            <input type="text" placeholder="ane" name="ane">
+        </div>
+        <input type="submit" value="Get Prediction" class="btn">
+    </form>
+
+</section>
+
+{% endblock %} {% block js %}
 <script>
-    
 </script>
 {% endblock %}

@@ -56,23 +56,24 @@ def index():
     return render_template('index.html')
 
 @app.route('/predict', methods=['GET', 'POST'])
-def predict():
+def predictform():
     if request.method == 'POST':
-        age = int(request.form['age'])
-        bp = int(request.form['bp'])
-        sg = float(request.form['sg'])
-        rbc = int(request.form['rbc'])
-        pcc = int(request.form['pcc'])
-        ba = int(request.form['ba'])
-        bu = int(request.form['bu'])
-        sc = float(request.form['sc'])
-        pot = float(request.form['pot'])
-        htn = int(request.form['htn'])
-        dm = int(request.form['dm'])
-        cad = int(request.form['cad'])
-        pe = int(request.form['pe'])
-        ane = int(request.form['ane'])
+        age = request.form['age']
+        bp = request.form['bp']
+        sg = request.form['sg']
+        rbc = request.form['rbc']
+        pcc = request.form['pcc']
+        ba = request.form['ba']
+        bu = request.form['bu']
+        sc = request.form['sc']
+        pot = request.form['pot']
+        htn = request.form['htn']
+        dm = request.form['dm']
+        cad = request.form['cad']
+        pe = request.form['pe']
+        ane = request.form['ane']
         data = convert_to_df(age, bp, sg, rbc, pcc, ba, bu, sc, pot, htn, dm, cad, pe, ane)
+        print(data.head())
         prediction = predict(data)
         if prediction == 1:
             prediction = 'You have Chronic Kidney Disease'
