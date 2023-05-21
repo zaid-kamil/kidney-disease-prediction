@@ -74,12 +74,15 @@ def predictform():
         ane = request.form['ane']
         data = convert_to_df(age, bp, sg, rbc, pcc, ba, bu, sc, pot, htn, dm, cad, pe, ane)
         print(data.head())
-        prediction = predict(data)
-        if prediction == 1:
-            prediction = 'You have Chronic Kidney Disease'
-        else:
-            prediction = 'You do not have Chronic Kidney Disease'
-        return render_template('predict.html', result=prediction)
+        try:
+            prediction = predict(data)
+            if prediction == 1:
+                prediction = 'You have Chronic Kidney Disease'
+            else:
+                prediction = 'You do not have Chronic Kidney Disease'
+            return render_template('predict.html', result=prediction)
+        except:
+            return render_template('predict.html', result="invalid data")
     return render_template('predict.html')
 
 if __name__ == '__main__':
