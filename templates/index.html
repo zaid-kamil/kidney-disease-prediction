@@ -1,20 +1,376 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block css %}
 
-{% block css %}
 <style>
-    
-</style>
-{% endblock css %}
-{% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 mx-auto"></div>
-    </div>
-</div>
-{% endblock %}
 
-{% block js %}
-<script>
-    
-</script>
+</style>
+{% endblock css %} {% block content %}
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Unleashing the Power of Prediction<span> : A Step Towards Kidney Health </span></h3>
+        <a href="#contactNew" class="btn">contact us</a>
+
+    </div>
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/k1.jpg " alt=" "></div>
+            <div class="swiper-slide "><img src="/static/images/k2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/static/images/k4.jpg " alt=" "></div>
+            <div class="swiper-slide "><img src="/static/images/k5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/static/images/k8.jpg " alt=" "></div>
+            <div class="swiper-slide "><img src="/static/images/k21.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-vial"></i>
+            <h3>Blood Test</h3>
+            <p> We provide facility of blood test to evaluate a person's health and detect various medical conditions.
+            </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tint"></i>
+            <h3>Sugar Test</h3>
+            <p>We provide facility of sugar test to evaluate a person's health and detect various medical conditions.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-flask"></i>
+            <h3>Urine Test</h3>
+            <p>A test that examines a urine sample to evaluate various parameters such as color, clarity, pH, protein, glucose, ketones, and presence of bacteria etc. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-flask"></i>
+            <h3>Thyroid and Lipid test</h3>
+            <p>These tests evaluate the functioning of the thyroid gland by measuring thyroid-stimulating hormone (TSH), T3 (triiodothyronine), and T4 (thyroxine) levels.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-x-ray"></i>
+            <h3>X-Ray and CT-Scan</h3>
+            <p>Commonly used to visualize bones and certain organs to diagnose fractures, lung infections, or other conditions.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-magnet"></i>
+            <h3>Ultrasound and MRI</h3>
+            <p>A non-invasive imaging test that uses sound waves to visualize organs, blood vessels, and tissues. It is often used to assess the abdomen, pelvis, thyroid, or cardiovascular system.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>ECG</h3>
+            <p>This test records the electrical activity of the heart to evaluate heart rate, rhythm, and detect any abnormalities.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-eye"></i>
+            <h3>ENT And EYE Test</h3>
+            <p>This test records the electrical activity of the heart to evaluate heart rate, rhythm, and detect any abnormalities. </p>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"><span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="/static/images/doc 2.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>"Empowering Early Intervention: Predicting Kidney Disease with Precision"</h3>
+            <p>Kidney disease is a significant health concern worldwide, affecting millions of people and leading to serious complications if left undetected and untreated. Early detection and prediction of kidney disease play a crucial role in improving
+                patient outcomes and implementing timely interventions. With advancements in technology and the availability of large-scale medical data, predictive models and algorithms have emerged as valuable tools for identifying individuals at risk
+                of developing kidney disease.
+                </i>
+            </p>
+
+            <a href="#" class="btn">contact us</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+<!-- price section starts  -->
+
+<section class="price" id="price">
+
+    <h1 class="heading"> our <span>price</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">for Blood test</h3>
+            <h3 class="amount">As Per Charge</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li> <i class="fas fa-check"></i> WBC Count </li>
+                <li> <i class="fas fa-check"></i> RBC Count</li>
+                <li> <i class="fas fa-check"></i> Heamoglobin <i class="fa fa-level-down" aria-hidden="true"></i> </li>
+                <li> <i class="fas fa-check"></i> Report </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 class="title">for X-Ray and CT SCAN</h3>
+            <h3 class="amount">As Per Charge</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li> <i class="fas fa-check"></i>Advanced Machine </li>
+                <li> <i class="fas fa-check"></i> Digital report </li>
+                <li> <i class="fas fa-check"></i> After services </li>
+                <li> <i class="fas fa-check"></i> Film report </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Sugar/Urine/Thyroid Test</h3>
+            <h3 class="amount">As Per Charge</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>full services</li>
+                <li> <i class="fas fa-check"></i>Sample Collection </li>
+                <li> <i class="fas fa-check"></i>Screen Monitoring</li>
+                <li> <i class="fas fa-check"></i>Doctor consultancy with diet chart </li>
+                <li> <i class="fas fa-check"></i> Report</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 class="title">for others</h3>
+            <h3 class="amount">As Per Charge</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Albumin Test</li>
+                <li> <i class="fas fa-check"></i>Mamograpphy </li>
+                <li> <i class="fas fa-check"></i>Bone Dermitology </li>
+                <li> <i class="fas fa-check"></i>ECG</li>
+                <li> <i class="fas fa-check"></i>ENT And EYE Test </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- price section ends -->
+
+<!-- review section starts  -->
+
+<section class="reivew" id="review">
+
+    <h1 class="heading">client's <span>review</span></h1>
+
+    <div class="review-slider swiper-container">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>SHIVANSH</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>Good Services</p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>DEEksha khare</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>loved the way they offered their services </p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>Deepak yadav</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>Used advanced technology for all test </p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pic-4.png" alt="">
+                    <div class="user-info">
+                        <h3>RUPALI JHA</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>Affordable price and Doctor consultancy is best</p>
+            </div>
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pp.jpg" alt="">
+                    <div class="user-info">
+                        <h3>MASHIYAT ZEHRA</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>Affordable price and Doctor consultancy is best</p>
+            </div>
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="/static/images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>VAIBHAW SHUKLA</h3>
+                        <span>happy clients</span>
+                    </div>
+                </div>
+                <p>good consultancy about health</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="contactNew">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> mumbai </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> jogeshwari </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> goregaon </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> navi mumbai </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> andheri </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> service </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> price </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reivew </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 8795074714 </a>
+            <a href="#"> <i class="fas fa-phone"></i>7985418312</a>
+            <a href="#"> <i class="fas fa-envelope"></i> shashwat_mc21043@srmcem.ac.in</a>
+            <a href="#"> <i class="fas fa-envelope"></i> prachi_mc21032@srmcem.ac.in </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Lucknow- India</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="prachi shashwat facebook"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="@Prachi_singh280"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://instagram.com/prachi_.singh2805"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/in/prachi-singh-335a27221"> <i class="fab fa-linkedin"></i> linkedin
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Boombox surprise event planner</a></span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+
+    <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+    </div>
+
+    <h3>choose color</h3>
+
+    <div class="buttons">
+        <div class="theme-btn" style="background: #3867d6;"></div>
+        <div class="theme-btn" style="background: #f7b731;"></div>
+        <div class="theme-btn" style="background: #ff0033;"></div>
+        <div class="theme-btn" style="background: #20bf6b;"></div>
+        <div class="theme-btn" style="background: #fa8231;"></div>
+        <div class="theme-btn" style="background: #FC427B;"></div>
+    </div>
+
+</div>
+{% endblock %} {% block js %}
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="/static/js/script.js"></script>
 {% endblock %}
