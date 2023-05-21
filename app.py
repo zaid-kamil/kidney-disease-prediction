@@ -79,7 +79,7 @@ def predictform():
             prediction = 'You have Chronic Kidney Disease'
         else:
             prediction = 'You do not have Chronic Kidney Disease'
-        return render_template('predict.html', prediction=prediction)
+        return render_template('predict.html', result=prediction)
     return render_template('predict.html')
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% block css %}
-{% endblock css %} 
+{% endblock css %}
 {% block content %}
 <section class="contact" id="contact">
 
@@ -8,7 +8,7 @@
 
     <form action="/predict" method="post">
         <div class="inputBox">
-            <input type="text" placeholder="name"  name="name">
+            <input type="text" placeholder="name" name="name">
             <input type="number" placeholder="age" name="age">
         </div>
         <div class="inputBox">
@@ -16,11 +16,24 @@
             <input type="number" placeholder="sg" name="sg" step=".1">
         </div>
         <div class="inputBox">
-            <input type="text" placeholder="rbc" name="rbc">
-            <input type="text" placeholder="pcc" name="pcc">
+            <input type="text" placeholder="rbc" name="rbc" list="rbcop">
+            <!-- datalist of normal abnomal -->
+            <datalist list="rbcop">
+                <option value="normal">
+                <option value="abnormal">
+            </datalist>
+            <input type="text" placeholder="pcc" name="pcc" list="pccop">
+            <datalist list="pccop">
+                <option value="present">
+                <option value="notpresent">
+            </datalist>
         </div>
         <div class="inputBox">
-            <input type="text" placeholder="ba" name="ba">
+            <input type="text" placeholder="ba" name="ba" list="baop">
+            <datalist list="baop">
+                <option value="present">
+                <option value="notpresent">
+            </datalist>
             <input type="number" placeholder="bu" name="bu" step=".1">
         </div>
         <div class="inputBox">
@@ -28,16 +41,41 @@
             <input type="number" placeholder="pot" name="pot" step=".1">
         </div>
         <div class="inputBox">
-            <input type="text" placeholder="htn" name="htn">
-            <input type="text" placeholder="dm" name="dm">
+            <input type="text" placeholder="htn" name="htn" list="htnop">
+            <datalist list="htnop">
+                <option value="yes">
+                <option value="no">
+            </datalist>
+            <input type="text" placeholder="dm" name="dm" list="dmop">
+            <datalist list="dmop">
+                <option value="yes">
+                <option value="no">
+            </datalist>
         </div>
         <div class="inputBox">
-            <input type="text" placeholder="cad" name="cad">
-            <input type="text" placeholder="pe" name="pe">
-            <input type="text" placeholder="ane" name="ane">
+            <input type="text" placeholder="cad" name="cad" list="cadop">
+            <datalist list="cadop">
+                <option value="yes">
+                <option value="no">
+            </datalist>
+            <input type="text" placeholder="pe" name="pe" list="peop">
+            <datalist list="peop">
+                <option value="yes">
+                <option value="no">
+            </datalist>
+            <input type="text" placeholder="ane" name="ane" list="aneop">
+            <datalist list="aneop">
+                <option value="yes">
+                <option value="no">
+            </datalist>
         </div>
         <input type="submit" value="Get Prediction" class="btn">
     </form>
+
+    {% if result %}
+    <h1>{{result}}</h1>
+    {% endif %}
+
 
 </section>
 
